@@ -88,7 +88,7 @@ resource "aws_security_group" "web_sg" {
 # EC2 Instance
 # -----------------------
 resource "aws_instance" "web_server" {
-  ami           = "ami-0360c520857e3138f" # Amazon Linux 2 (us-east-1)
+  ami           = "ami-000" # Amazon Linux 2 (us-east-1)
   instance_type = "t2.micro"
   subnet_id     = aws_subnet.public_subnet.id
   security_groups = [aws_security_group.web_sg.id]
